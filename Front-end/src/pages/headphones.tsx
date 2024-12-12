@@ -6,7 +6,6 @@ import Categories from '../components/layout/categories/categories'
 import AboutHomePage from '../components/layout/aboutHomePage/aboutHomePage'
 import Footer from '../components/layout/footer/footer'
 
-
 function Headphones() {
 
   return (
