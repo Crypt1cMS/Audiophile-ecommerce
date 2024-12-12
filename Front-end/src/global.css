@@ -4,7 +4,7 @@
     --h3-font-size: clamp(1.625rem, 4vw, 2rem);
     --h4-font-size: 1.75rem;
     --h6-font-size: 1.125rem;
-    --p-font-size: 0.938rem;
+    --p-font-size: 1rem;
     --overline-font-size: 0.875rem;
     --subtittle-font-size: 0.813rem;
     --main-background-color: rgba(255, 255, 255, 1);
@@ -13,6 +13,7 @@
     --third-bg-accent-color: rgba(250, 250, 250, 1);
     --primary-accent-color: rgba(216, 125, 74, 1);
     --btn-hover-color: rgba(251, 175, 133, 1);
+    --space-between-components: 0 0 150px 0;
 }
 
 *, ::before, ::after {
@@ -54,10 +55,11 @@ p {
     font-weight: 400;
 }
 
-.overline-higjlight {
+.overline-highlight {
     letter-spacing: 10px;
     font-size: var(--overline-font-size);
     font-weight: 300;
+    color: var(--primary-accent-color);
 }
 
 .primary-btn {
@@ -67,11 +69,49 @@ p {
     color: white;
     padding: .75rem 1.75rem;
     background: var(--primary-accent-color);
-    border-radius: 5px;
     cursor: pointer;
     transition: background 0.2s ease-in-out;
 }
 
 .primary-btn:hover {
     background: var(--btn-hover-color);
+}
+
+
+.secondary-btn {
+    text-wrap: nowrap;
+    width: min-content;
+    text-decoration: none;
+    color: white;
+    padding: .75rem 1.75rem;
+    background: black;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+}
+
+.secondary-btn:hover {
+    background: rgb(33, 33, 33);
+}
+
+.outline-btn {
+    text-wrap: nowrap;
+    width: min-content;
+    text-decoration: none;
+    color: black;
+    padding: .75rem 1.75rem;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.outline-btn:hover {
+    background: black;
+    color: white;
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 20px;
 }

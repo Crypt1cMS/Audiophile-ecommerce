@@ -1,0 +1,47 @@
+.burger-content {
+    position: fixed;
+    background: white;
+    top: 0;
+    left: 0;
+    height: 100dvh;
+    width: 100%;
+    color: black;
+    padding: 0 30px;
+    overflow-y:hidden;
+}
+
+header {
+    position: absolute;
+    top: 20px;
+    left: 16px;
+}
+
+.burger-items {
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.burger-items a {
+    text-decoration: none;
+    color: black;
+    padding: 20px 0;
+    transition: color 200ms ease-in-out;
+    font-weight: 500;
+}
+
+.burger-items a:hover {
+    color: var(--primary-accent-color);
+}
+
+.burger-items .border {
+    border-bottom: 1px solid black;
+}
+
+.logo img {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}

@@ -1,0 +1,21 @@
+.category-header-container {
+    background: black;
+    width: 100%;
+    height: 30dvh;
+    color: white;
+    margin: var(--space-between-components);
+}
+
+.category-header-wrapper {
+    margin: 0 auto;
+    max-width: 1400px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+    padding-bottom: 60px;
+}
+
+.category-header-wrapper h3 {
+    text-transform: uppercase;
+}

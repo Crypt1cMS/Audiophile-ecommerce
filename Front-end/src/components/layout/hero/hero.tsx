@@ -1,6 +1,6 @@
 import './hero.css'
 import '../../../global.css'
-import HomeImg from '../../../../public/Bitmap.png'
+import HomeImg from '../../../assets/Bitmap.png'
 import { Link } from 'react-router'
 
 function Hero() {
@@ -17,13 +17,13 @@ function Hero() {
                 <span className='overline'>New Product</span>
                 <h1>XX99 Mark II <br /> Headphones</h1>
                 <p>Experience natural, lifelike audio and exceptional <br /> build quality made for the passionate music <br />enthusiast.</p>
-                <Link to={'/'} className='primary-btn'><p>SEE PRODUCT</p></Link>
+                <Link to={'/headphones'} className='primary-btn'><p>SEE PRODUCT</p></Link>
               </div>
 
             </div>
 
             <div className="hero-right-content">
-              <img src={HomeImg} alt="X99 IMG" />
+              <img draggable={false} src={HomeImg} alt="X99 IMG" />
             </div>
 
           </div>
