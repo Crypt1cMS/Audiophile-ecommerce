@@ -37,7 +37,7 @@ const router = createBrowserRouter([
     errorElement: <NotFound404 />,
   },
   {
-    path: '/admin/products',
+    path: '/admin',
     element: <AdminProducts />,
     errorElement: <NotFound404 />,
   }

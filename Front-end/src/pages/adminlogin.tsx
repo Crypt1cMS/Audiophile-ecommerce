@@ -12,9 +12,8 @@ function AdminLogin() {
     const [errorMessage, setErrorMessage] = useState('');
     const navigate = useNavigate()
 ;
-    const handleLogin = async () => {
-        console.log('Logging in with:', {username, password})
-
+    const handleLogin = async (e: React.FormEvent) => {
+        e.preventDefault();
         try {
             const response = await axios.post('http://localhost:5000/admin/login', {
                 username,
@@ -23,7 +22,7 @@ function AdminLogin() {
 
             setErrorMessage('');
             localStorage.setItem('token', response.data.token)
-            navigate('/admin/products')
+            navigate('/admin')
         } catch (error) {
             if (axios.isAxiosError(error)) {
                 // Handle Axios errors
@@ -45,7 +44,7 @@ function AdminLogin() {
             
             <div className="login-content">
 
-                <div className="login-form">
+                <form className="login-form">
 
                     <div className="login-form-tittle">
                         <h2>Log In</h2>
@@ -72,8 +71,8 @@ function AdminLogin() {
 
                     {errorMessage && <p className="error-message">{errorMessage}</p>}
 
-                    <button type='button' className='login-btn' onClick={handleLogin}>Log in</button>
-                </div>
+                    <button type='submit' className='login-btn' onClick={handleLogin}>Log in</button>
+                </form>
             </div>
 
         </div>
