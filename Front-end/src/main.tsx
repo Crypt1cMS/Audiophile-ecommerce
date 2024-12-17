@@ -8,7 +8,7 @@ import Earphones from './pages/earphones'
 import Speakers from './pages/speakers'
 import NotFound404 from './pages/notfound404'
 import AdminLogin from './pages/adminlogin'
-import AdminProducts from './pages/AdminProducts'
+import AdminProducts from './pages/adminproducts'
 
 const router = createBrowserRouter([
   {
