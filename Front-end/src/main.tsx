@@ -7,6 +7,8 @@ import Headphones from './pages/headphones'
 import Earphones from './pages/earphones'
 import Speakers from './pages/speakers'
 import NotFound404 from './pages/notfound404'
+import AdminLogin from './pages/adminlogin'
+import AdminProducts from './pages/AdminProducts'
 
 const router = createBrowserRouter([
   {
@@ -29,6 +31,16 @@ const router = createBrowserRouter([
     element: <Speakers />,
     errorElement: <NotFound404 />,
   },
+  {
+    path: '/admin/login',
+    element: <AdminLogin />,
+    errorElement: <NotFound404 />,
+  },
+  {
+    path: '/admin/products',
+    element: <AdminProducts />,
+    errorElement: <NotFound404 />,
+  }
 ])
 
 createRoot(document.getElementById('root')!).render(
